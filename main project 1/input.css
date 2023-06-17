@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body
+{
+background-image:url('../images/bg-header-desktop.png');
+background-repeat:no-repeat;
+background-size:contain;
+background-color:#2A1A5E
+}
+footer
+{
+  background-color:#5026A7
+}
+@layer base {
+h5 {
+@apply mb-2 text-2xl font-bold text-darkGrayishBlue
+}
+}
+.section-content
+{
+@apply max-w-3xl mx-auto text-xl text-grayishBlue leading-9 text-center;
+}
+.section-container
+{
+@apply max-w-6xl mx-auto text-center px-10;
+}
+.h3-standard
+{
+@apply mb-8 text-4xl font-bold text-darkGrayishBlue md:text-5xl ;
+}
+.button-standard{
+@apply p-4 px-8 rounded-full shadow-lg  hover:opacity-80 duration-300;
+}
+.button-container
+{
+@apply flex flex-col justify-center space-y-6 w-full md:flex-row md:space-y-0 md:space-x-4 text-xl text-white
+}
+
+@media(max-width:576px)
+{
+body{
+  background-image:url('../images/bg-header-mobile.png');
+}
+ 
+  }
+  .ficon:hover{
+  filter: invert(53%) sepia(98%) saturate(484%) hue-rotate(2deg) brightness(101%) contrast(94%);
+  }
+  .logo{
+    filter: invert(53%) sepia(98%) saturate(4500%) hue-rotate(2deg) brightness(101%) contrast(98%);
+  }
